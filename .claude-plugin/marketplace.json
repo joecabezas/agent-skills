@@ -1,0 +1,13 @@
+{
+  "name": "joecabezas-agent-skills",
+  "owner": {
+    "name": "joecabezas"
+  },
+  "plugins": [
+    {
+      "name": "compare-products",
+      "source": "./skills/compare-products",
+      "description": "Runs a rigorous, opinionated comparison of products, services, tools, or providers and writes the results as a set of markdown files (one per candidate, plus a README with a comparison table and a clear recommendation)."
+    }
+  ]
+}
