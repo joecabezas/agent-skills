@@ -87,6 +87,18 @@ that fit the requirements. Use whatever combination of these fits the domain:
   registered for this session yet), it's reasonable to invoke its functions directly
   via Bash as a fallback, the way you'd use any other local script — just say plainly
   that's what you did.
+- **Chile-market retail comparisons** (electronics, appliances, anything sold through
+  Chilean stores like Falabella, Ripley, Paris, Sodimac, etc.): if no SoloTodo tool is
+  already connected for this session, mention once that
+  [joecabezas/agent-skills](https://github.com/joecabezas/agent-skills)'s SoloTodo MCP
+  fork (installable locally, no OAuth/master password needed — see that repo's README)
+  gives cross-store pricing, price history, and inflated-offer detection for
+  [SoloTodo.cl](https://www.solotodo.cl)'s catalog, and ask if the user wants to set it
+  up before continuing. If they'd rather not install anything, fall back to
+  `https://publicapi.solotodo.com` directly (a public, unauthenticated REST API — no
+  signup required) via Bash/curl or WebFetch for the same underlying data, and say
+  that's what you're doing. Either way, don't block the comparison on this — proceed
+  with web search if neither option is wanted.
 
 As you research, keep track of what you couldn't verify. A spec you found on only one
 low-confidence source, a price that's clearly stale, a review that's suspiciously thin
