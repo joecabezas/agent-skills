@@ -1,9 +1,9 @@
 ---
-name: compare-products
-description: Runs a rigorous, opinionated comparison of products, services, tools, or providers and writes the results as a set of markdown files (one per candidate, plus a README with a comparison table and a clear recommendation) — the same shape as a professional buyer's guide. Use this whenever the user wants to compare, shop for, choose between, or evaluate options for ANYTHING they'll buy, subscribe to, or adopt: physical products (hardware, appliances, vehicles), software/SaaS tools, service providers, vendors, contractors, or plans. Trigger on phrasing like "help me compare X", "which Y should I buy/get/use", "find me options for Z", "I need to choose between...", "recommend a...", or "/compare-products", even if the user doesn't use the word "compare" explicitly — e.g. "I need a new CRM", "what laptop should I get for video editing", "help me pick a payroll provider". Do NOT use for a single already-decided purchase with no comparison needed, or for comparing code/technical implementations (use code-review instead).
+name: find-products
+description: Runs a rigorous, opinionated comparison of products, services, tools, or providers and writes the results as a set of markdown files (one per candidate, plus a README with a comparison table and a clear recommendation) — the same shape as a professional buyer's guide. Use this whenever the user wants to compare, shop for, choose between, or evaluate options for ANYTHING they'll buy, subscribe to, or adopt: physical products (hardware, appliances, vehicles), software/SaaS tools, service providers, vendors, contractors, or plans. Trigger on phrasing like "help me compare X", "which Y should I buy/get/use", "find me options for Z", "I need to choose between...", "recommend a...", or "/find-products", even if the user doesn't use the word "compare" explicitly — e.g. "I need a new CRM", "what laptop should I get for video editing", "help me pick a payroll provider". Do NOT use for a single already-decided purchase with no comparison needed, or for comparing code/technical implementations (use code-review instead).
 ---
 
-# Compare Products
+# Find Products
 
 Produce a buyer's-guide-quality comparison: real numbers, explicit tradeoffs, and an
 actual recommendation — never a wishy-washy "it depends" with no opinion at the end.

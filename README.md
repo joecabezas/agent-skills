@@ -9,27 +9,27 @@ instructions an agent loads on demand when a task matches.
 
 | Skill | What it does |
 |---|---|
-| [`compare-products`](skills/compare-products/) | Rigorous, opinionated product/vendor comparisons — writes one file per candidate plus a README with a comparison table and a real recommendation. Works for hardware, SaaS tools, service providers, anything you'd shop for. |
+| [`find-products`](skills/find-products/) | Rigorous, opinionated product/vendor comparisons — writes one file per candidate plus a README with a comparison table and a real recommendation. Works for hardware, SaaS tools, service providers, anything you'd shop for. |
 
 ## Install
 
 ### With `npx skills` (works with most agents)
 
 ```bash
-npx skills add https://github.com/joecabezas/agent-skills --skill compare-products
+npx skills add https://github.com/joecabezas/agent-skills --skill find-products
 ```
 
 ### With Claude Code's native plugin system
 
 ```
 /plugin marketplace add joecabezas/agent-skills
-/plugin install compare-products@joecabezas-agent-skills
+/plugin install find-products@joecabezas-agent-skills
 ```
 
 ### Manually
 
-Copy `skills/compare-products/SKILL.md` into your agent's skills directory
-(e.g. `.claude/skills/compare-products/SKILL.md` for a Claude Code project,
+Copy `skills/find-products/SKILL.md` into your agent's skills directory
+(e.g. `.claude/skills/find-products/SKILL.md` for a Claude Code project,
 or wherever your agent looks for skills — see the [client list](https://agentskills.io/clients)
 for exact paths per tool).
 
@@ -40,7 +40,7 @@ agent-skills/
 ├── .claude-plugin/
 │   └── marketplace.json      # Claude Code native plugin discovery
 ├── skills/
-│   └── compare-products/
+│   └── find-products/
 │       └── SKILL.md
 └── README.md
 ```
